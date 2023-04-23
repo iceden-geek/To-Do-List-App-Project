@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #28292A;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    position: relative;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 720px;
+    background-color: #FAFAFA;
+}
+
+.sidebar .working_illustration {
+    width: 84px;
+    height: 84px;
+}
+
+.sidebar h2 {
+    color: #767676;
+}
+
+.sidebar img {
+    width: 24px;
+    height: 24px;
+}
+
+.tasks {
+    margin: 24px 0 0 4px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+span:hover {
+    color: #BD897E;
+}
+
+hr {
+    border: none;
+    border-top: solid 1px #767676;
+    margin-top: 54px;
+}
+
+nav {
+    position: absolute;
+    top: 470px;
+}
+
+.main {
+    padding: 40px;
+    width: 100%;
+}
+
+.main h2 {
+    color: #0075AE;
+}
+
+.main h3 {
+    font-size: 14px;
+    color: #767676;
+}
+
+.search_add_container {
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search {
+    position: relative;
+    border-radius: 8px;
+    width: 450px;
+    height: 34px;
+    font-size: 14px;
+    background-color: #FAFAFA;
+    border: none;
+    color: #0075AE;
+    outline: none;
+    padding: 0 10px;
+}
+
+#search::placeholder {
+    color: #0075AE;
+    font-size: 14px;
+    position: absolute;
+    top: 7px;
+}
+
+.newTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0,117,174, 0.1);
+    width: 114px;
+    height: 34px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.newTask img {
+    width: 24px;
+    height: 24px;
+}
+
+.newTask span {
+    color: #0075AE;
+    font-size: 14px;
+}
+
+.newTask:hover {
+    background-color: rgb(189, 137, 126, 0.5);
+}
+
+.newTaskInput {
+    margin-top: 16px;
+    display: none
+}
+
+.newTaskInput form {
+    display: flex;
+}
+
+#new {
+    position: relative;
+    width: 450px;
+    height: 36px;
+    border-radius: 8px;
+    background-color: rgb(0,117,174, 0.1);
+    font-size: 14px;
+    border: none;
+    outline: none;
+    color: #0075AE;
+    padding: 0 10px;
+}
+
+#new::placeholder {
+    color: #0075AE;
+}
+
+.newCheckMark {
+    display: flex;
+    align-items: center;
+}
+
+.newTaskInput img {
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/*style the select option*/
+.newTaskImportance {
+    margin-top: 16px;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #44AF69;
+    font-size: 14px;
+    background-color: rgb(68,175,105, 0.1);
+    height: 36px;
+    cursor: pointer;
+}
+
+/*style the options*/
+option {
+    font-size: 14px;
+    background-color: #FFF;
+    color: #44AF69;
+}
+option:focus {
+    background-color: #0075AE;
+    color: #BD897E;
+}
+
+/*!*style the options when hover and in focus*!*/
+/*select option:hover, select option:focus {*/
+/*    background-color: #0075AE;*/
+/*    color: #BD897E;*/
+/*}*/
+
+.todos {
+    margin: 20px 0 0 8px;
+}
+
+.todoContainer {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center;
+}
+
+.todoContainer div {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 8px;
+    padding: 0 0 3px 0;
+}
+
+.delete {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.completed div {
+    text-decoration: line-through;
+}
+
+.illustrations {
+    width: 720px;
+    padding: 40px;
+}
+
+.illustrations img {
+    width: 100%;
+    height: 240px;
+}

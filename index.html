@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>To Do List</title>
+</head>
+<body>
+<!--Creating the sidebar section-->
+<section class="sidebar">
+    <img class="working_illustration" src="src/assets/working.svg" alt="working">
+    <h2>Tasks</h2>
+    <div class="tasks">
+        <img class="all_tasks" src="src/assets/select_all.png" alt="all icon">
+        <span id="allTasks">All tasks</span>
+    </div>
+    <div class="tasks">
+        <img class="to_do" src="src/assets/square.png" alt="square icon">
+        <span id="toDo">To do</span>
+    </div>
+    <div class="tasks">
+        <img class="important" src="src/assets/important.png" alt="exclamation icon">
+        <span id="important">Important</span>
+    </div>
+    <div class="tasks">
+        <img class="progress" src="src/assets/progress.png" alt="progress icon">
+        <span id="inProgress">In progress</span>
+    </div>
+    <div class="tasks">
+        <img class="done" src="src/assets/done.png" alt="all icon">
+        <span id="done">Done</span>
+    </div>
+    <hr> <!-- A divider -->
+    <nav>
+        <p>Made by Iceden</p>
+    </nav>
+</section>
+<!--Creating the main section that will display the tasks-->
+<section class="main">
+    <h2>My To-do</h2>
+    <h3></h3>
+    <div class="search_add_container">
+        <form>
+            <label for="search"></label>
+            <input type="text" id="search" name="search" placeholder="Search" autocomplete="off"/> <!-- Search input section -->
+        </form>
+        <div class="newTask">
+            <img src="src/assets/plus.png" alt="plus icon">
+            <span>New Task</span>
+        </div>
+    </div>
+    <div class="newTaskInput">
+        <form>
+            <label for="new"></label>
+            <input type="text" id="new" name="new" placeholder="Type your task here..." autocomplete="off"/> <!-- new task input section -->
+            <div class="newCheckMark"> <!--A check mark for creating a new task-->
+                <img src="src/assets/check_mark.png" alt="Check-mark icon">
+            </div>
+        </form>
+        <label>
+            <select class="newTaskImportance">
+                <option value="1">Not important</option>
+                <option value="2">Important</option>
+            </select>
+        </label>
+    </div>
+<!--    This is where the to-do list will be displayed-->
+    <div class="todos">
+
+    </div>
+</section>
+<!--Section for calendar-->
+<section class="illustrations">
+    <img class="working_illustration" src="src/assets/programming.svg" alt="programming illustration">
+    <img class="working_illustration" src="src/assets/work_time.svg" alt="working remotely">
+    <img class="working_illustration" src="src/assets/working_out.svg" alt="working out">
+</section>
+
+<script src="src/app.js"></script>
+</body>
+</html>
